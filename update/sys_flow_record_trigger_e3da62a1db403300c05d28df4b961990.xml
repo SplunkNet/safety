@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_record_trigger">
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_322892_safety_issue">state=10<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-07 19:04:44</sys_created_on>
+        <sys_id>e3da62a1db403300c05d28df4b961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Safety" source="x_322892_safety">9d806a25db003300c05d28df4b961900</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safety">9d806a25db003300c05d28df4b961900</sys_scope>
+        <sys_update_name>sys_flow_record_trigger_e3da62a1db403300c05d28df4b961990</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-07 19:04:44</sys_updated_on>
+        <table>x_322892_safety_issue</table>
+    </sys_flow_record_trigger>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_322892_safety.Utils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Utils</name>
+        <script><![CDATA[var Utils = Class.create();
+Utils.prototype = {
+	initialize: function() {
+	},
+	
+	/*
+ 	* Description: Create an incident from a Safety record
+ 	* Parameters: safetyGr - GlideRecord()
+ 	* Returns:Object
+		number = incident number
+		sys_id = incident sys_id
+ 	*/
+	
+	
+	createIncident: function(safetyGr){
+		
+		var inc = new GlideRecord('incident');
+		inc.newRecord();
+		inc.short_description = '(Safety): ' + safetyGr.getValue('short_description');
+		inc.caller_id = safetyGr.getValue('opened_by');
+		inc.description = safetyGr.getValue('description');
+		inc.insert();
+		
+		return this._makeIncidentResponse(inc);
+	},
+	
+	_makeIncidentResponse: function(incGr){
+		
+		var answer = {};
+		
+		answer.number = incGr.getValue('number');
+		answer.sys_id = incGr.getValue('sys_id');
+		
+		return answer;
+	},
+	
+	type: 'Utils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-07 19:29:34</sys_created_on>
+        <sys_id>342f66a5db403300c05d28df4b9619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Utils</sys_name>
+        <sys_package display_value="Safety" source="x_322892_safety">9d806a25db003300c05d28df4b961900</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Safety">9d806a25db003300c05d28df4b961900</sys_scope>
+        <sys_update_name>sys_script_include_342f66a5db403300c05d28df4b9619b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-07 19:29:34</sys_updated_on>
+    </sys_script_include>
+</record_update>

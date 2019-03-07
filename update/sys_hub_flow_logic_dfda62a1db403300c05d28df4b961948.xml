@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d1daee61db403300c05d28df4b9619b8</block>
+        <comment/>
+        <connected_to>6bf62090-9d1c-4af7-b29e-a25d26472798</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Safety Approval">dfda62a1db403300c05d28df4b961911</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-07 19:04:43</sys_created_on>
+        <sys_id>dfda62a1db403300c05d28df4b961948</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Safety" source="x_322892_safety">9d806a25db003300c05d28df4b961900</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safety">9d806a25db003300c05d28df4b961900</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_dfda62a1db403300c05d28df4b961948</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-07 19:14:47</sys_updated_on>
+        <ui_id>41f82bb6-5d3f-4889-ba62-4d1743fbac99</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=dfda62a1db403300c05d28df4b961948"/>
+</record_update>
